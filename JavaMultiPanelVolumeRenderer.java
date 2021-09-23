@@ -22,6 +22,7 @@ public class JavaMultiPanelVolumeRenderer extends JFrame {
   private vtkRenderWindowPanel renderWindowPanel4;
 
   private vtkVolumeProperty property;
+
   public JavaMultiPanelVolumeRenderer() {
     vtkNamedColors colors = new vtkNamedColors();
 
@@ -108,6 +109,7 @@ public class JavaMultiPanelVolumeRenderer extends JFrame {
           frame.setVisible(true);
           ((JavaMultiPanelVolumeRenderer) frame).render();
           ((JavaMultiPanelVolumeRenderer) frame).renderTimed();
+          ((JavaMultiPanelVolumeRenderer) frame).gc();
         }
       });
     } catch (Exception e) {
@@ -130,4 +132,9 @@ public class JavaMultiPanelVolumeRenderer extends JFrame {
     renderWindowPanel3.Render();
     renderWindowPanel4.Render();
   }
+
+  public void gc() {
+    property.Delete();
+  }
+
 }
