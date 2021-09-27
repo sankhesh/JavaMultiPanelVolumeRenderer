@@ -62,22 +62,22 @@ public class JavaMultiPanelVolumeRenderer extends JFrame {
 
     // Create a render window panel to display the volume
     renderWindowPanel1 = new vtkRenderWindowPanel();
-    renderWindowPanel1.setPreferredSize(new Dimension(300, 600));
+    renderWindowPanel1.setPreferredSize(new Dimension(600, 200));
     renderWindowPanel1.setInteractorStyle(new vtkInteractorStyleTrackballCamera());
 
     // Create a render window panel to display the volume
     renderWindowPanel2 = new vtkRenderWindowPanel();
-    renderWindowPanel2.setPreferredSize(new Dimension(300, 600));
+    renderWindowPanel2.setPreferredSize(new Dimension(600, 200));
     renderWindowPanel2.setInteractorStyle(new vtkInteractorStyleTrackballCamera());
 
     // Create a render window panel to display the volume
     renderWindowPanel3 = new vtkRenderWindowPanel();
-    renderWindowPanel3.setPreferredSize(new Dimension(300, 600));
+    renderWindowPanel3.setPreferredSize(new Dimension(200, 300));
     renderWindowPanel3.setInteractorStyle(new vtkInteractorStyleTrackballCamera());
 
     // Create a render window panel to display the volume
     renderWindowPanel4 = new vtkRenderWindowPanel();
-    renderWindowPanel4.setPreferredSize(new Dimension(300, 600));
+    renderWindowPanel4.setPreferredSize(new Dimension(200, 300));
     renderWindowPanel4.setInteractorStyle(new vtkInteractorStyleTrackballCamera());
 
     add(renderWindowPanel1, BorderLayout.NORTH);
